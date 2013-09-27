@@ -1,0 +1,4 @@
+<?
+	class System_Core {
+	
+	}

@@ -1,0 +1,3 @@
+<?foreach(self::$errors as $e){?>
+    <?=$e?><br>
+<?}?>
