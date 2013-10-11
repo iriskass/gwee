@@ -2,7 +2,6 @@
     class Gwee {
         public static $db = null;
         public static $view = '';
-        public static $view3 = '';
 
         public static function getDB(){
             if(self::$db === null){
