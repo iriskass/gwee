@@ -1,4 +1,4 @@
 <?
-    class Prototype_Controller extends Prototype_App {
+    class Gwee_Prototype_Controller extends Gwee_Prototype_App {
         
     }

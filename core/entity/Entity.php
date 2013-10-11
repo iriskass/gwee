@@ -1,5 +1,5 @@
 <?
-    class System_Core_Entity extends Prototype {
+    class Gwee_Core_Entity extends Prototype {
         public static $table = null;
         public static $key = array();
         public static $fields = array();

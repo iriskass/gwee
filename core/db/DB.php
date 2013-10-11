@@ -1,11 +1,11 @@
 <?
-    class System_Core_DB {
+    class Gwee_Core_DB {
         private $db;
         private $lastQuery = false;
         private $values = array(), $types = '';
 
         public function __construct(){
-            $config = System_Config::$db;
+            $config = Gwee_Config::getDB();
             $this->db = new mysqli(
                 $config['host'], 
                 $config['user'], 

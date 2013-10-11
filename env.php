@@ -1,11 +1,17 @@
 <?
-    define("ROOT", dirname(__FILE__));
+    define("GWEE_ROOT", dirname(__FILE__));
+    define("ROOT", dirname(dirname(__FILE__)));
+    $script = explode("/", $_SERVER['SCRIPT_NAME']);
+    array_pop($script);
+    $prefix = implode("/", $script);
+    define("PATH_PREFIX", $prefix);
+    Gwee_Core_Router::getRouteMap();
 
     function __autoload($class_name){
         $namespaces = array(
-            'Application'   =>'Prototype_App',
-            'Controller'    =>'Prototype_Controller',
-            'Entity'        =>'System_Core_Entity',
+            'Application'   =>'Gwee_Prototype_App',
+            'Controller'    =>'Gwee_Prototype_Controller',
+            'Entity'        =>'Gwee_Core_Entity',
         );
         $ext = ".php";
         $ds = DIRECTORY_SEPARATOR;

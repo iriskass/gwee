@@ -1,17 +1,21 @@
 <?
-    class Prototype {
+    class Gwee_Prototype {
+        public $title = '';
         public $db = null;
         public $models = array();
         public function __construct(){
-            $this->db = System::getDB();
+            $this->db = Gwee::getDB();
         }
 
         public function fatal($msg){
-            System_Core_Exception::fatal($msg, get_class($this));
+            Gwee_Core_Exception::fatal($msg, get_class($this));
         }
 
         public function __toString(){
-            return get_class($this);
+            if($this->title === ''){
+                $this->title = get_class($this);
+            }
+            return $this->title;
         }
 
         public function getTemplateCaller(){
@@ -39,4 +43,5 @@
             }
             return $this->models[$model];
         }
+
     }

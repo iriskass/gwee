@@ -1,4 +1,0 @@
-<?
-	class System_Core {
-	
-	}

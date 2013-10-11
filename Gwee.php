@@ -1,18 +1,19 @@
 <?
-    class System {
+    class Gwee {
         public static $db = null;
         public static $view = '';
+        public static $view3 = '';
 
         public static function getDB(){
             if(self::$db === null){
-                self::$db = new System_Core_DB();
+                self::$db = new Gwee_Core_DB();
             }
             return self::$db;
         }
 
         public static function compile(){
-            if(System_Core_Exception::hasErrors()){
-                echo System_Core_Exception::output();
+            if(Gwee_Core_Exception::hasErrors()){
+                echo Gwee_Core_Exception::output();
             }else{
                 echo self::$view;
             }

@@ -1,5 +1,5 @@
 <?
-    class Prototype_App_Iterator implements Iterator {
+    class Gwee_Prototype_App_Iterator implements Iterator {
         private $stack = array();
 
         public function __construct($array){

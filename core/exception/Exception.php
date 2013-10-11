@@ -1,5 +1,5 @@
 <?
-    class System_Core_Exception {
+    class Gwee_Core_Exception {
         public static $errors = array();
 
         private static $html = null;

@@ -1,4 +1,0 @@
-toPHP
-=====
-
-lightweight php environment
